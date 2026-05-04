@@ -1,0 +1,16 @@
+// This file only exposes the resulting values as CSS variables for plugins.
+
+// Fallback values (used when prescsscallback has not overridden them yet).
+$primary:    #0f6cbf !default;
+$secondary:  #6c757d !default;
+$hero-bg:    #0f6cbf !default;
+
+// Expose theme tokens as CSS custom properties so that block_playerhud,
+// filter_playerhud, and other ecosystem plugins can consume theme colours
+// without hardcoding hex values.
+:root {
+    --lore-color-primary:    #{$primary};
+    --lore-color-secondary:  #{$secondary};
+    --lore-color-hero-bg:    #{$hero-bg};
+    --lore-font-family-base: #{$font-family-base};
+}

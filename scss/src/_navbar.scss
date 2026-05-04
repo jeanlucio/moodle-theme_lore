@@ -1,0 +1,37 @@
+body.theme-lore {
+    .navbar {
+        background-color: var(--lore-color-primary, $primary);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        letter-spacing: -.3px;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            color: rgba(255, 255, 255, .85);
+        }
+    }
+
+    .primary-navigation .nav-link {
+        color: rgba(255, 255, 255, .9);
+        font-weight: 500;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+
+        &.active {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    // User menu icon in the navbar.
+    .usermenu .nav-link {
+        color: rgba(255, 255, 255, .9);
+    }
+}

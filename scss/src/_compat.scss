@@ -1,0 +1,22 @@
+// Rule: never use !important here. Increase selector specificity instead.
+// Rule: add an English comment explaining WHY each override exists.
+
+// Prevent any theme filter from affecting plugin icons/images.
+// High-specificity selectors ensure these rules win over generic img{} overrides
+// without needing !important.
+body.theme-lore .block img,
+body.theme-lore .activity img,
+body.theme-lore .mod-indent img,
+body.theme-lore [class*="activityiconcontainer"] img {
+    filter: none;
+    opacity: 1;
+}
+
+// Popup and embedded layouts have no header, footer, or block regions.
+// Remove padding that would otherwise create orphaned whitespace.
+body.theme-lore.pagelayout-popup,
+body.theme-lore.pagelayout-embedded {
+    #page {
+        padding-top: 0;
+    }
+}
