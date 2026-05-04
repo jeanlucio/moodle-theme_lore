@@ -61,10 +61,7 @@ jobs:
           echo "NVM_DIR=$HOME/.nvm" >> $GITHUB_ENV
 
       - name: Install moodle-plugin-ci
-        # Activate theme_lore during install so PHPUnit and Behat run with it active.
-        run: |
-          moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1 \
-            --add-config '$CFG->theme = "lore";'
+        run: moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1
         env:
           DB: ${{ matrix.database }}
           MOODLE_BRANCH: ${{ matrix.moodle-branch }}
