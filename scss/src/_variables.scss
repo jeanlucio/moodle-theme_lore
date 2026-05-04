@@ -9,8 +9,8 @@ $hero-bg:    #0f6cbf !default;
 // filter_playerhud, and other ecosystem plugins can consume theme colours
 // without hardcoding hex values.
 :root {
-    --lore-color-primary:    #{$primary};
-    --lore-color-secondary:  #{$secondary};
-    --lore-color-hero-bg:    #{$hero-bg};
+    --lore-color-primary: #{$primary};
+    --lore-color-secondary: #{$secondary};
+    --lore-color-hero-bg: #{$hero-bg};
     --lore-font-family-base: #{$font-family-base};
 }

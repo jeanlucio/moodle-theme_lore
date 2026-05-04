@@ -15,6 +15,14 @@ body.theme-lore {
         }
     }
 
+    // Logo uploaded via admin settings.
+    .navbar-brand img,
+    .logo img {
+        max-height: 50px;
+        width: auto;
+        display: inline-block;
+    }
+
     .primary-navigation .nav-link {
         color: rgba(255, 255, 255, .9);
         font-weight: 500;
@@ -33,5 +41,44 @@ body.theme-lore {
     // User menu icon in the navbar.
     .usermenu .nav-link {
         color: rgba(255, 255, 255, .9);
+    }
+
+    // Navbar toggle (hamburger) button in mobile.
+    .navbar-toggler {
+        color: rgba(255, 255, 255, .75);
+        border-color: rgba(255, 255, 255, .3);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            border-color: rgba(255, 255, 255, .6);
+        }
+
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    // Secondary navigation bar (course/activity breadcrumb area).
+    .secondary-navigation .nav-link {
+        &:hover,
+        &:focus {
+            color: var(--lore-color-primary, $primary);
+        }
+
+        &.active {
+            color: var(--lore-color-primary, $primary);
+            border-bottom-color: var(--lore-color-primary, $primary);
+        }
+    }
+
+    // Breadcrumb items.
+    .breadcrumb-item a {
+        color: var(--lore-color-primary, $primary);
+
+        &:hover,
+        &:focus {
+            color: darken($primary, 10%);
+        }
     }
 }

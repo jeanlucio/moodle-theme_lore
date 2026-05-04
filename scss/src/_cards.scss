@@ -33,5 +33,65 @@ body.theme-lore {
             background-color: darken($primary, 8%);
             border-color: darken($primary, 8%);
         }
+
+        &:active,
+        &.active {
+            background-color: darken($primary, 12%);
+            border-color: darken($primary, 12%);
+        }
+    }
+
+    .btn-outline-primary {
+        color: var(--lore-color-primary, $primary);
+        border-color: var(--lore-color-primary, $primary);
+
+        &:hover,
+        &:focus {
+            background-color: var(--lore-color-primary, $primary);
+            border-color: var(--lore-color-primary, $primary);
+            color: #fff;
+        }
+    }
+
+    // Links.
+    a:not(.btn):not(.nav-link):not(.dropdown-item):not(.breadcrumb-item) {
+        color: var(--lore-color-primary, $primary);
+
+        &:hover,
+        &:focus {
+            color: darken($primary, 10%);
+        }
+    }
+
+    // Progress bar colour (used in course cards, activity completion).
+    .progress-bar {
+        background-color: var(--lore-color-primary, $primary);
+    }
+
+    // Badge primary.
+    .badge.bg-primary,
+    .badge-primary {
+        background-color: var(--lore-color-primary, $primary);
+    }
+
+    // Form focus ring tied to primary colour.
+    .form-control:focus,
+    .form-select:focus {
+        border-color: var(--lore-color-primary, $primary);
+        box-shadow: 0 0 0 .2rem rgba($primary, .25);
+    }
+
+    // Pagination.
+    .page-item.active .page-link {
+        background-color: var(--lore-color-primary, $primary);
+        border-color: var(--lore-color-primary, $primary);
+    }
+
+    .page-link {
+        color: var(--lore-color-primary, $primary);
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
     }
 }
