@@ -1,14 +1,12 @@
-body.theme-lore {
-    // Constrain the site logo shown on the login page.
-    #loginlogo.login-logo {
-        text-align: center;
-        margin-bottom: 1.5rem;
+// Constrain the site logo shown on the login page.
+#loginlogo.login-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
 
-        #logoimage {
-            max-width: 220px;
-            max-height: 140px;
-            width: auto;
-            height: auto;
-        }
+    #logoimage {
+        max-width: 220px;
+        max-height: 140px;
+        width: auto;
+        height: auto;
     }
 }
