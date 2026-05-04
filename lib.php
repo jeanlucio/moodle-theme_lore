@@ -125,8 +125,8 @@ function theme_lore_normalize_theme_setting_url(?string $protocolrelative): ?\mo
 /**
  * Serves files stored in the theme's file areas (logo, favicon, heroimage).
  *
- * @param stdClass $course Not used.
- * @param stdClass $cm Not used.
+ * @param stdClass|null $course Not used.
+ * @param stdClass|null $cm Not used.
  * @param context $context The file context.
  * @param string $filearea The file area name.
  * @param array $args Remaining URL path arguments.
