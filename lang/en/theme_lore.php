@@ -23,7 +23,6 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-// phpcs:disable moodle.Files.LineLength
 
 $string['accessibilitysettings'] = 'Accessibility';
 $string['advancedcsssettings'] = 'Advanced CSS';
